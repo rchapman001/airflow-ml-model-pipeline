@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+
+echo "Running Black to format Python code..."
+
+# List folders that contain Python projects
+PYTHON_PROJECTS=(
+  "airflow"
+  "scraper-service"
+  "training-service"
+  "prediction-service"
+  "ui-service"
+)
+
+for dir in "${PYTHON_PROJECTS[@]}"; do
+  if [ -d "$dir" ]; then
+    echo "Formatting $dir..."
+    (cd "$dir" && black --line-length 100 .)
+  fi
+done
+
+# Format any loose Python files at root (optional)
+black --line-length 100 .
+
+# Add any modified files to the commit
+git add .
+
+echo "Black formatting complete."

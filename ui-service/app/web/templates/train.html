@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card shadow p-4">
+  <h3>Train Model</h3>
+  <p>Trigger the Airflow pipeline.</p>
+
+  <form method="post">
+    <div class="mb-3">
+      <label for="model_size" class="form-label">Model Size</label>
+      <select name="model_size" id="model_size" class="form-select">
+        <option value="small" {% if model_size == "small" %}selected{% endif %}>Small</option>
+        <option value="medium" {% if model_size == "medium" %}selected{% endif %}>Medium</option>
+        <option value="large" {% if model_size == "large" %}selected{% endif %}>Large</option>
+      </select>
+    </div>
+
+    <button class="btn btn-primary">Start Training</button>
+  </form>
+
+  {% if message %}
+  <div class="alert alert-info mt-3">{{ message }}</div>
+  {% endif %}
+</div>
+
+{% endblock %}

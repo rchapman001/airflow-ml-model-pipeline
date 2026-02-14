@@ -1,0 +1,630 @@
+{
+  "info": {
+    "_postman_id": "33be54a0-e10a-402b-927f-9684f6026e4e",
+    "name": "airflow-ml-model-pipeline",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36349510"
+  },
+  "item": [
+    {
+      "name": "airflow",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v2/monitor/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v2",
+                "monitor",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /auth/login",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "password",
+                  "value": "admin123",
+                  "type": "string"
+                },
+                {
+                  "key": "username",
+                  "value": "admin",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"wAvbWKP2rp9fQzKA\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/auth/token",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "auth",
+                "token"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "admin",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "password",
+                  "value": "admin123",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /dags/company_address_parser_pipeline small",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImp0aSI6ImIwYWMwMTYzN2IyOTQ4ZjI4YzQxNTY1YTE1YzI5NTUzIiwiYXVkIjoiYXBhY2hlLWFpcmZsb3ciLCJuYmYiOjE3NzAzNDE2MTAsImV4cCI6MTc3MDQyODAxMCwiaWF0IjoxNzcwMzQxNjEwfQ.pHHq9ds5UirwlCPCKF3GvrzyDml0xH9CM4ViCiqCPm1RNrnWqOSfscvOUUukHpadP05A1Xhte6whafpE4wYtIA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"logical_date\": \"2026-02-04T04:00:03Z\",\n  \"conf\": {\n    \"size\": \"small\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v2/dags/company_address_parser/dagRuns",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v2",
+                "dags",
+                "company_address_parser",
+                "dagRuns"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /dags/company_address_parser_pipeline medium",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImp0aSI6ImIwYWMwMTYzN2IyOTQ4ZjI4YzQxNTY1YTE1YzI5NTUzIiwiYXVkIjoiYXBhY2hlLWFpcmZsb3ciLCJuYmYiOjE3NzAzNDE2MTAsImV4cCI6MTc3MDQyODAxMCwiaWF0IjoxNzcwMzQxNjEwfQ.pHHq9ds5UirwlCPCKF3GvrzyDml0xH9CM4ViCiqCPm1RNrnWqOSfscvOUUukHpadP05A1Xhte6whafpE4wYtIA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"logical_date\": \"2026-02-04T04:00:03Z\",\n  \"conf\": {\n    \"size\": \"medium\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v2/dags/company_address_parser/dagRuns",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v2",
+                "dags",
+                "company_address_parser",
+                "dagRuns"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /dags/company_address_parser_pipeline large",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImp0aSI6ImIwYWMwMTYzN2IyOTQ4ZjI4YzQxNTY1YTE1YzI5NTUzIiwiYXVkIjoiYXBhY2hlLWFpcmZsb3ciLCJuYmYiOjE3NzAzNDE2MTAsImV4cCI6MTc3MDQyODAxMCwiaWF0IjoxNzcwMzQxNjEwfQ.pHHq9ds5UirwlCPCKF3GvrzyDml0xH9CM4ViCiqCPm1RNrnWqOSfscvOUUukHpadP05A1Xhte6whafpE4wYtIA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"logical_date\": \"2026-02-04T04:00:03Z\",\n  \"conf\": {\n    \"size\": \"large\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v2/dags/company_address_parser/dagRuns",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v2",
+                "dags",
+                "company_address_parser",
+                "dagRuns"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /dags/service_health_check",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImp0aSI6IjRmZWI3ZTkwOGNiYjQ3Zjg4MDFkMzU3MWE2ZDQyMDk5IiwiYXVkIjoiYXBhY2hlLWFpcmZsb3ciLCJuYmYiOjE3NzAzMzk1OTEsImV4cCI6MTc3MDQyNTk5MSwiaWF0IjoxNzcwMzM5NTkxfQ.k7nAqLFt4CPHzwtEDjlX3_kxkhVFEbbCFkSnkvswp3-i4dJtttnYc7vknDhapz8YRRdy79pvIqwST7wPQrZnrg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"logical_date\": \"2026-02-04T04:00:04Z\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v2/dags/service_health_check/dagRuns",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v2",
+                "dags",
+                "service_health_check",
+                "dagRuns"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "prediction-service",
+      "item": [
+        {
+          "name": "GET /prediction-service/health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8003/prediction-service/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8003",
+              "path": [
+                "prediction-service",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /prediction-service/predict-address?size=small",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"text\": \"3655 Central Ave NE Minneapolis MN 55418\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8003/prediction-service/predict-address?size=small",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8003",
+              "path": [
+                "prediction-service",
+                "predict-address"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "small"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /prediction-service/predict-address?size=medium",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"text\": \"3655 Central Ave NE Minneapolis MN 55418\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8003/prediction-service/predict-address?size=medium",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8003",
+              "path": [
+                "prediction-service",
+                "predict-address"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "medium"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /prediction-service/predict-address?size=large",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"text\": \"3655 Central Ave NE Minneapolis MN 55418\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8003/prediction-service/predict-address?size=large",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8003",
+              "path": [
+                "prediction-service",
+                "predict-address"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "large"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "scraper-service",
+      "item": [
+        {
+          "name": "GET /scraper-service/health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8001/scraper-service/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8001",
+              "path": [
+                "scraper-service",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /scraper-service/company-address?size=small",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8001/scraper-service/company-address?size=small",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8001",
+              "path": [
+                "scraper-service",
+                "company-address"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "small",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /scraper-service/company-address?size=medium",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8001/scraper-service/company-address?size=medium",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8001",
+              "path": [
+                "scraper-service",
+                "company-address"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "medium"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /scraper-service/company-address?size=large",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8001/scraper-service/company-address?size=large",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8001",
+              "path": [
+                "scraper-service",
+                "company-address"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "large"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "trainer-service",
+      "item": [
+        {
+          "name": "GET /trainer-service/health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8002/trainer-service/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8002",
+              "path": [
+                "trainer-service",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /trainer-service/train-address-model?size=small",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8002/trainer-service/train-address-model?size=small",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8002",
+              "path": [
+                "trainer-service",
+                "train-address-model"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "small"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /trainer-service/train-address-model?size=medium",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8002/trainer-service/train-address-model?size=medium",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8002",
+              "path": [
+                "trainer-service",
+                "train-address-model"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "medium"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /trainer-service/train-address-model?size=large",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8002/trainer-service/train-address-model?size=large",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8002",
+              "path": [
+                "trainer-service",
+                "train-address-model"
+              ],
+              "query": [
+                {
+                  "key": "size",
+                  "value": "large"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
