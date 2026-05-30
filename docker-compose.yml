@@ -1,0 +1,27 @@
+# TODO: Setup docker-compose file for all services
+# version: "3.8"
+
+# services:
+#   airflow:
+#     image: apache/airflow:2.8.1
+#     ports:
+#       - "8080:8080"
+#     volumes:
+#       - ./airflow/dags:/opt/airflow/dags
+#     environment:
+#       - AIRFLOW__CORE__LOAD_EXAMPLES=False
+
+#   scraper:
+#     build: ./scraper-service
+#     ports:
+#       - "8001:8000"
+
+#   trainer:
+#     build: ./trainer-service
+#     ports:
+#       - "8002:8000"
+
+#   predictor:
+#     build: ./prediction-service
+#     ports:
+#       - "8003:8000"

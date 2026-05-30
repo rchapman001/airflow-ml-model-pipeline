@@ -1,0 +1,241 @@
+State,Zip,City
+Alabama,35242,Birmingham
+Alabama,36608,Mobile
+Alabama,36117,Montgomery
+Alabama,35802,Huntsville
+Alabama,35216,Birmingham
+Alabama,35244,Birmingham
+Alabama,35213,Birmingham
+Alabama,36106,Montgomery
+Alabama,36609,Mobile
+Alabama,35243,Birmingham
+Alaska,99515,Anchorage
+Alaska,99503,Anchorage
+Alaska,99516,Anchorage
+Alaska,99577,Eagle River
+Alaska,99504,Anchorage
+Alaska,99654,Wasilla
+Alaska,99507,Anchorage
+Alaska,99508,Anchorage
+Alaska,99701,Fairbanks
+Alaska,99501,Anchorage
+Arizona,85254,Scottsdale
+Arizona,85032,Phoenix
+Arizona,85281,Tempe
+Arizona,85308,Glendale
+Arizona,85251,Scottsdale
+Arizona,85705,Tucson
+Arizona,85257,Scottsdale
+Arizona,85306,Glendale
+Arizona,85201,Mesa
+Arizona,85345,Peoria
+Arkansas,72758,Rogers
+Arkansas,72211,Little Rock
+Arkansas,72712,Bentonville
+Arkansas,72223,Little Rock
+Arkansas,72209,Little Rock
+Arkansas,72762,Springdale
+Arkansas,71913,Hot Springs National Park
+Arkansas,72205,Little Rock
+Arkansas,72701,Fayetteville
+Arkansas,72756,Rogers
+California,90046,Los Angeles
+California,90034,Los Angeles
+California,94110,San Francisco
+California,90066,Los Angeles
+California,90035,Los Angeles
+California,90024,Los Angeles
+California,90036,Los Angeles
+California,94109,San Francisco
+California,94117,San Francisco
+California,94114,San Francisco
+Colorado,80202,Denver
+Colorado,80209,Denver
+Colorado,80206,Denver
+Colorado,80203,Denver
+Colorado,80210,Denver
+Colorado,80302,Boulder
+Colorado,80301,Boulder
+Colorado,80906,Colorado Springs
+Colorado,80003,Arvada
+Colorado,80525,Fort Collins
+Connecticut,6010,Bristol
+Connecticut,6810,Danbury
+Connecticut,6510,New Haven
+Connecticut,6901,Stamford
+Connecticut,6460,Millford
+Connecticut,6702,Waterbury
+Connecticut,6492,Wallingford
+Connecticut,6851,Norwalk
+Connecticut,6360,Norwich
+Connecticut,6066,Vernon Rockville
+Delaware,19808,Wilmington
+Delaware,19702,Newark
+Delaware,19805,Wilmington
+Delaware,19810,Wilmington
+Delaware,19711,Newark
+Delaware,19901,Dover
+Delaware,19804,Wilmington
+Delaware,19977,Smyrna
+Delaware,19802,Wilmington
+Delaware,19934,Camden Wyoming
+Florida,33139,Miami Beach
+Florida,33140,Miami Beach
+Florida,33131,Miami
+Florida,33009,Hallandale
+Florida,33132,Miami
+Florida,33129,Miami
+Florida,33141,Miami Beach
+Florida,33308,Fort Lauderdale
+Florida,33410,West Palm Beach
+Florida,32250,Jacksonville Beach
+Georgia,30309,Atlanta
+Georgia,30022,Alpharetta
+Georgia,30062,Marietta
+Georgia,30004,Alpharetta
+Georgia,30342,Atlanta
+Georgia,30305,Atlanta
+Georgia,30319,Atlanta
+Georgia,30075,Roswell
+Georgia,30306,Atlanta
+Georgia,30005,Alpharetta
+Hawaii,96816,Honolulu
+Hawaii,96734,Kailua
+Hawaii,96821,Honolulu
+Hawaii,96825,Honolulu
+Hawaii,96797,Waipahu
+Hawaii,96744,Kaneohe
+Hawaii,96822,Honolulu
+Hawaii,96789,Mililani
+Hawaii,96813,Honolulu
+Hawaii,96707,Kapolei
+Idaho,83704,Boise
+Idaho,83404,Idaho Falls
+Idaho,83706,Boise
+Idaho,83814,Coeur D Alene
+Idaho,83705,Boise
+Idaho,83301,Twin Falls
+Idaho,83642,Meridian
+Idaho,83835,Hayden
+Idaho,83709,Boise
+Idaho,83401,Idaho Falls
+Illinois,60657,Chicago
+Illinois,60614,Chicago
+Illinois,60640,Chicago
+Illinois,60647,Chicago
+Illinois,60618,Chicago
+Illinois,60625,Chicago
+Illinois,60613,Chicago
+Illinois,60622,Chicago
+Illinois,60611,Chicago
+Illinois,60608,Chicago
+Indiana,46260,Indianapolis
+Indiana,46220,Indianapolis
+Indiana,46307,Crown Point
+Indiana,46544,Mishawaka
+Indiana,46204,Indianapolis
+Indiana,46825,Fort Wayne
+Indiana,46250,Indianapolis
+Indiana,47401,Bloomington
+Indiana,47715,Evansville
+Indiana,46614,South Bend
+Iowa,52246,Iowa City
+Iowa,52402,Cedar Rapids
+Iowa,50310,Des Moines
+Iowa,50010,Ames
+Iowa,52245,Iowa City
+Iowa,50311,Des Moines
+Iowa,52807,Davenport
+Iowa,50701,Waterloo
+Iowa,52404,Cedar Rapids
+Iowa,52240,Iowa City
+Kansas,66210,Overland Park
+Kansas,66062,Olathe
+Kansas,67212,Wichita
+Kansas,66061,Olathe
+Kansas,66211,Leawood
+Kansas,67206,Wichita
+Kansas,66111,Kansas City
+Kansas,66614,Topeka
+Kansas,66044,Lawrence
+Kansas,67203,Wichita
+Kentucky,40207,Louisville
+Kentucky,40503,Lexington
+Kentucky,40222,Louisville
+Kentucky,40220,Louisville
+Kentucky,40502,Lexington
+Kentucky,41017,Edgewood
+Kentucky,40509,Lexington
+Kentucky,40205,Louisville
+Kentucky,40241,Louisville
+Kentucky,40223,Louisville
+Louisiana,70115,New Orleans
+Louisiana,70808,Baton Rouge
+Louisiana,70433,Covington
+Louisiana,70130,New Orleans
+Louisiana,70002,Metairie
+Louisiana,70810,Baton Rouge
+Louisiana,70118,New Orleans
+Louisiana,71106,Shreveport
+Louisiana,70301,Thibodaux
+Louisiana,70809,Baton Rouge
+Maine,4103,Portland
+Maine,4330,Augusta
+Maine,4102,Portland
+Maine,4401,Bangor
+Maine,4901,Waterville
+Maine,3904,Kittery
+Maine,4240,Lewiston
+Maine,4038,Gorham
+Maine,4101,Portland
+Maine,4457,Levant
+Maryland,20817,Bethesda
+Maryland,21208,Pikesville
+Maryland,21401,Annapolis
+Maryland,20814,Bethesda
+Maryland,21044,Columbia
+Maryland,20910,Silver Spring
+Maryland,20815,Chevy Chase
+Maryland,21093,Lutherville Timonium
+Maryland,21204,Towson
+Maryland,20740,College Park
+Massachusetts,2116,Boston
+Massachusetts,2111,Boston
+Massachusetts,2139,Cambridge
+Massachusetts,2130,Boston
+Massachusetts,1803,Burlington
+Massachusetts,2474,Arlington
+Massachusetts,2114,Boston
+Massachusetts,1801,Woburn
+Massachusetts,2134,Allston
+Massachusetts,2132,Boston
+Michigan,48104,Ann Arbor
+Michigan,48103,Ann Arbor
+Michigan,48201,Detroit
+Michigan,49506,Grand Rapids
+Michigan,48108,Ann Arbor
+Michigan,48322,West Bloomfield
+Michigan,48326,Auburn Hills
+Michigan,48187,Canton
+Michigan,48009,Birmingham
+Michigan,48083,Troy
+Minnesota,55403,Minneapolis
+Minnesota,55404,Minneapolis
+Minnesota,55104,Saint Paul
+Minnesota,55105,Saint Paul
+Minnesota,55410,Minneapolis
+Minnesota,55406,Minneapolis
+Minnesota,55408,Minneapolis
+Minnesota,55417,Minneapolis
+Minnesota,55116,Saint Paul
+Minnesota,55418,Minneapolis
+Mississippi,39211,Jackson
+Mississippi,39503,Gulfport
+Mississippi,39531,Biloxi
+Mississippi,39232,Jackson
+Mississippi,39402,Hattiesburg
+Mississippi,39206,Jackson
+Mississippi,39208,Pearl
+Mississippi,38671,Southaven
+Mississippi,39209,Jackson
+Mississippi,39301,Meridian
